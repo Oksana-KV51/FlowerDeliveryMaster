@@ -1,0 +1,16 @@
+{% extends 'flowers/base.html' %}
+
+{% block title %}
+    <title>Главная страница</title>
+{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Добро пожаловать в Магазин цветов!</h1>
+        <p class="lead">Здесь вы найдете самые красивые цветы для любого случая.</p>
+        <hr class="my-4">
+        <p>Посмотрите наш каталог, чтобы найти идеальный букет.</p>
+
+        <a class="btn btn-primary btn-lg" href="{% url 'catalog' %}" role="button">Перейти к каталогу</a>
+    </div>
+{% endblock %}
